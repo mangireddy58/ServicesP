@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="ServicesP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CL5-rK-VN5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vj-Fn-Z60">
+                                        <rect key="frame" x="56" y="145" width="209" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4vj-Fn-Z60" secondAttribute="height" multiplier="209:30" id="WnK-Du-M1T"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1w5-IF-dRZ">
+                                        <rect key="frame" x="56" y="197" width="209" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcR-1F-jJH">
+                                        <rect key="frame" x="56" y="269" width="209" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKv-iH-XNz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1w5-IF-dRZ" firstAttribute="centerX" secondItem="CL5-rK-VN5" secondAttribute="centerX" id="6Ey-rN-vWn"/>
+                                    <constraint firstItem="4vj-Fn-Z60" firstAttribute="leading" secondItem="CL5-rK-VN5" secondAttribute="leading" constant="56" id="KPR-JB-s7r"/>
+                                    <constraint firstItem="JcR-1F-jJH" firstAttribute="centerX" secondItem="CL5-rK-VN5" secondAttribute="centerX" id="OMl-eW-BOx"/>
+                                    <constraint firstItem="1w5-IF-dRZ" firstAttribute="top" secondItem="4vj-Fn-Z60" secondAttribute="bottom" constant="22" id="Q8h-F7-MN4"/>
+                                    <constraint firstItem="1w5-IF-dRZ" firstAttribute="leading" secondItem="CL5-rK-VN5" secondAttribute="leading" constant="56" id="S5E-CU-8Xv"/>
+                                    <constraint firstItem="JcR-1F-jJH" firstAttribute="leading" secondItem="CL5-rK-VN5" secondAttribute="leading" constant="56" id="Ug9-m5-bPv"/>
+                                    <constraint firstAttribute="trailing" secondItem="1w5-IF-dRZ" secondAttribute="trailing" constant="55" id="V00-Sl-fet"/>
+                                    <constraint firstItem="1w5-IF-dRZ" firstAttribute="width" secondItem="4vj-Fn-Z60" secondAttribute="width" id="b0b-il-AWh"/>
+                                    <constraint firstItem="4vj-Fn-Z60" firstAttribute="centerX" secondItem="CL5-rK-VN5" secondAttribute="centerX" id="dDV-bl-d3I"/>
+                                    <constraint firstItem="JcR-1F-jJH" firstAttribute="top" secondItem="1w5-IF-dRZ" secondAttribute="bottom" constant="42" id="dGt-C8-NUi"/>
+                                    <constraint firstAttribute="trailing" secondItem="JcR-1F-jJH" secondAttribute="trailing" constant="55" id="sTZ-iE-TCg"/>
+                                    <constraint firstItem="1w5-IF-dRZ" firstAttribute="height" secondItem="4vj-Fn-Z60" secondAttribute="height" id="wlf-GO-sTe"/>
+                                    <constraint firstItem="4vj-Fn-Z60" firstAttribute="top" secondItem="CL5-rK-VN5" secondAttribute="top" constant="145" id="xDW-Va-k8Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="4vj-Fn-Z60" secondAttribute="trailing" constant="55" id="y6s-12-iOj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CL5-rK-VN5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NVc-tV-jum"/>
+                            <constraint firstItem="CL5-rK-VN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pfe-lv-kzU"/>
+                            <constraint firstItem="CL5-rK-VN5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="x9z-FZ-xeK"/>
+                            <constraint firstItem="CL5-rK-VN5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z8s-MH-3ac"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTxtFld" destination="1w5-IF-dRZ" id="GAy-RJ-Jae"/>
+                        <outlet property="userNameTxtFld" destination="4vj-Fn-Z60" id="XH2-fR-BxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="-2"/>
+        </scene>
+    </scenes>
+</document>
