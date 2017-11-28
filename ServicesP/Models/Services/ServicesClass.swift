@@ -19,7 +19,6 @@ class ServerCommunication: NSObject {
     var delegate : ClassForServerCommDelegate?
     
     // Using NSUrlSession
-    
     func sendPostParametersWithNSUrlSession(parameterString : String, serviceName : String)-> Void {
         let urlStr = "\(Constants.BASE_URLS.BASE_URL)\(serviceName)"
         let jsonString = String(format: "%@", parameterString)
@@ -56,7 +55,6 @@ class ServerCommunication: NSObject {
     }
     
     //Using Afnetworking
-    
     func sendHttpPostRequestWithAFNetworking(parametersString : String, serviceName: String) -> Void {
         let serviceUrl = "\(Constants.BASE_URLS.BASE_URL)\(serviceName)"
         let data: Data? = parametersString.data(using: String.Encoding.utf8)
@@ -81,7 +79,6 @@ class ServerCommunication: NSObject {
     }
     
     //Using Alamofire
-    
     func sendHttpPostRequestWithAlamoFire(params: NSDictionary?, serviceName: String) -> Void {
         let serviceUrl = "\(Constants.BASE_URLS.BASE_URL)\(serviceName)"
         Alamofire.request(serviceUrl, method: .post, parameters: [:], encoding: JSONEncoding.default)
@@ -102,8 +99,6 @@ class ServerCommunication: NSObject {
                 }
         }
     }
-    
-    
     
 }
 

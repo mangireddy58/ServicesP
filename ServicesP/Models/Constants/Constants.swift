@@ -40,5 +40,4 @@ class Constants: NSObject {
     struct serviceTimeOut {
         static var service_Time_Out:Double = 30
     }
-    
 }
